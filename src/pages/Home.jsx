@@ -6,6 +6,7 @@ import HomeContact from '../components/HomeContact'
 import HomePricing from '../components/HomePricing'
 import HomeRead from '../components/HomeRead'
 import HomeQuestion from '../components/HomeQuestion'
+import HomeAppointmentCTA from '../components/HomeAppointmentCTA'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <HomePricing/>
         <HomeRead/>
         <HomeQuestion/>
+        <HomeAppointmentCTA/>
     </div>
   )
 }
