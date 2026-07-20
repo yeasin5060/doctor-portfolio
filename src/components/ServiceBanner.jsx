@@ -2,7 +2,7 @@ import dna from "../assets/dna.png";
 
 const ServiceBanner = () => {
     return (
-        <section className="py-16 bg-white">
+        <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="relative bg-[#dfe9ff] rounded-[28px] overflow-hidden py-12">
                     {/* DNA Image */}

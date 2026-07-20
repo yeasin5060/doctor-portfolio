@@ -10,7 +10,7 @@ import {
 
 const ServiceContact = () => {
   return (
-     <section className="py-24 bg-white">
+     <section className="pt-24 pb-10 bg-white">
         <div className="max-w-7xl mx-auto px-6">
             <div className="grid lg:grid-cols-5 gap-8">
                 {/* Left Form */}
