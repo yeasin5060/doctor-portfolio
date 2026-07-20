@@ -1,11 +1,11 @@
 import React from 'react'
 import { ArrowUpRight } from "lucide-react";
-import doctorMeeting from "../assets/sharmin.png";
+import doctorMeeting from "../assets/checkup-three.jpg";
 
 
 const AboutAppointmentCTA = () => {
     return (
-        <section className="py-24 bg-white">
+        <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="bg-[#dfe9ff] rounded-[36px] overflow-hidden">
                     <div className="grid lg:grid-cols-2 items-center gap-8 p-6 lg:p-10">

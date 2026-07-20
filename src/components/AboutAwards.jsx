@@ -34,7 +34,7 @@ const awards = [
 
 const AboutAwards = () => {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-3 gap-6">
                     {/* Education */}

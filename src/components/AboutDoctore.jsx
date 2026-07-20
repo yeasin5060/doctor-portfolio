@@ -13,7 +13,7 @@ const doctorInfo = [
 
 const AboutDoctore = () => {
   return (
-     <section className="py-20 bg-white">
+     <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-6 items-center">
 
