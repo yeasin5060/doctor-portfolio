@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutSectionTitle from '../components/AboutSectionTitle'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+        <AboutSectionTitle/>
+    </div>
   )
 }
 
