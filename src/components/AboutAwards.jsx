@@ -68,7 +68,6 @@ const AboutAwards = () => {
                         </div>
                     </div>
                     {/* Awards */}
-
                     <div className="bg-[#dfe9ff] rounded-[28px] p-10">
                         <div className="flex items-center gap-3 mb-4">
                             <Award
@@ -78,7 +77,6 @@ const AboutAwards = () => {
                             <h2 className="text-3xl font-bold">
                                 Awards
                             </h2>
-
                         </div>
                         <div className="space-y-7 mt-8">
                             {awards.map((award, index) => (
