@@ -10,50 +10,60 @@ import service6 from "../assets/checkup-one.jpg";
 
 const services = [
   {
-    title: "Chronic Disease Management",
+    title: "সাধারণ মেডিসিন",
     description:
-      "Long-term treatment for diabetes, hypertension, and more.",
+      "জ্বর, সর্দি-কাশি, গ্যাস্ট্রিক, সংক্রমণ, দুর্বলতা এবং অন্যান্য সাধারণ স্বাস্থ্য সমস্যার আধুনিক ও কার্যকর চিকিৎসা।",
     image: service1,
   },
   {
-    title: "General Health Checkup",
+    title: "ডায়াবেটিস ও উচ্চ রক্তচাপ চিকিৎসা",
     description:
-      "Comprehensive health assessment for overall wellbeing.",
+      "ডায়াবেটিস, উচ্চ রক্তচাপ এবং দীর্ঘমেয়াদি রোগের নিয়মিত পর্যবেক্ষণ, চিকিৎসা ও জীবনধারা বিষয়ক পরামর্শ।",
     image: service2,
   },
   {
-    title: "Cardiac & Blood Pressure Care",
+    title: "হৃদরোগ ও স্বাস্থ্য পরামর্শ",
     description:
-      "Expert management for heart and BP-related conditions.",
+      "হৃদরোগের ঝুঁকি মূল্যায়ন, বুকের ব্যথা, উচ্চ কোলেস্টেরল এবং সুস্থ জীবনযাপনের জন্য বিশেষজ্ঞ পরামর্শ।",
     image: service3,
   },
   {
-    title: "Respiratory Treatment",
+    title: "থাইরয়েড ও হরমোনজনিত রোগ",
     description:
-      "Diagnosis and care for asthma, cough, and lung issues.",
+      "থাইরয়েডের বিভিন্ন সমস্যা, হরমোনের ভারসাম্যহীনতা এবং সংশ্লিষ্ট রোগের নির্ণয় ও চিকিৎসা।",
     image: service4,
   },
   {
-    title: "Lifestyle & Nutrition Advice",
+    title: "স্বাস্থ্য পরীক্ষা ও প্রতিরোধমূলক সেবা",
     description:
-      "Guidance for diet, exercise, and healthy living.",
+      "নিয়মিত স্বাস্থ্য পরীক্ষা, রোগের প্রাথমিক শনাক্তকরণ এবং ভবিষ্যৎ স্বাস্থ্যঝুঁকি প্রতিরোধে বিশেষ পরামর্শ।",
     image: service5,
   },
   {
-    title: "Follow-Up Consultation",
+    title: "অনলাইন চিকিৎসা পরামর্শ",
     description:
-      "Continuous support for ongoing recovery and health improvement.",
+      "ভিডিও বা ফোনের মাধ্যমে ঘরে বসেই বিশেষজ্ঞ চিকিৎসকের পরামর্শ, রিপোর্ট বিশ্লেষণ এবং ফলো-আপ সেবা।",
     image: service6,
   },
 ];
 
 const Services = () => {
   return (
-     <section className="py-10 bg-white">
+    <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            আমার চিকিৎসা সেবাসমূহ
+          </h2>
 
+          <p className="text-gray-600 mt-4 max-w-3xl mx-auto leading-7">
+            আধুনিক চিকিৎসা, সঠিক রোগ নির্ণয় এবং রোগীকেন্দ্রিক সেবার মাধ্যমে
+            বিভিন্ন শারীরিক সমস্যার কার্যকর চিকিৎসা প্রদান করা হয়।
+          </p>
+        </div>
+        {/* Services */}
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-
           {services.map((service, index) => (
             <div
               key={index}
@@ -67,7 +77,7 @@ const Services = () => {
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm mt-3 leading-6">
+                  <p className="text-gray-600 text-sm mt-3 leading-7">
                     {service.description}
                   </p>
                 </div>
@@ -84,12 +94,9 @@ const Services = () => {
                 alt={service.title}
                 className="w-full h-60 object-cover rounded-[22px] mt-6"
               />
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   )

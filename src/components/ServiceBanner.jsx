@@ -11,15 +11,18 @@ const ServiceBanner = () => {
                         alt="DNA"
                         className="absolute top-0 left-0 w-24 md:w-28"
                     />
+
                     {/* Content */}
                     <div className="text-center">
 
                         <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
-                            Health & Wellness Services
+                            আমার চিকিৎসা সেবাসমূহ
                         </h2>
-                        <p className="mt-3 text-gray-500 text-sm md:text-base">
-                            Comprehensive care designed to keep you healthy,
-                            active, and confident.
+
+                        <p className="mt-4 text-gray-600 text-sm md:text-lg max-w-3xl mx-auto leading-7">
+                            আধুনিক চিকিৎসা, সঠিক রোগ নির্ণয় এবং রোগীকেন্দ্রিক স্বাস্থ্যসেবার মাধ্যমে
+                            ডায়াবেটিস, উচ্চ রক্তচাপ, হৃদরোগ, থাইরয়েডসহ বিভিন্ন শারীরিক সমস্যার
+                            উন্নত চিকিৎসা প্রদান করা হয়।
                         </p>
                     </div>
                 </div>
