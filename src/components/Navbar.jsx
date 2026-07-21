@@ -23,7 +23,7 @@ const Navbar = () => {
             </Link>
 
             <Link className="font-semibold" to="/about">
-              আমার সম্পর্কে
+              আমার সম্পর্কে জানুন
             </Link>
 
             <Link className="font-semibold" to="/service">
