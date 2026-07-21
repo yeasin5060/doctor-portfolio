@@ -5,23 +5,28 @@ import doctorMeeting from "../assets/checkup-three.jpg";
 
 const AboutAppointmentCTA = () => {
     return (
-        <section className="py-10 bg-white">
+       <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="bg-[#dfe9ff] rounded-[36px] overflow-hidden">
                     <div className="grid lg:grid-cols-2 items-center gap-8 p-6 lg:p-10">
                         {/* Left */}
                         <div className="space-y-8">
-                            <h2 className="text-4xl md:text-5xl font-bold leading-tight max-w-120">
-                                Get in touch with me for Appointment
+                            <h2 className="text-4xl md:text-5xl font-bold leading-tight max-w-[520px]">
+                                আপনার সুস্বাস্থ্যের জন্য আজই অ্যাপয়েন্টমেন্ট নিন
                             </h2>
-                            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full flex items-center gap-3 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30">
-                                Contact Me
-                                <ArrowUpRight size={18} />
-                            </button>
+
+                            <p className="text-lg text-gray-600 leading-8 max-w-[500px]">
+                                অভিজ্ঞ মেডিসিন বিশেষজ্ঞের পরামর্শ, সঠিক রোগ নির্ণয় এবং আধুনিক চিকিৎসা সেবা পেতে এখনই আমাদের সাথে যোগাযোগ করুন।
+                            </p>
                         </div>
+       
                         {/* Right */}
                         <div>
-                            <img src={doctorMeeting} alt="Appointment" className="w-full h-[380px] object-cover rounded-[28px]"/>
+                            <img
+                                src={doctorMeeting}
+                                alt="ডাক্তারের সাথে অ্যাপয়েন্টমেন্ট"
+                                className="w-full h-[380px] object-cover rounded-[28px]"
+                            />
                         </div>
                     </div>
                 </div>

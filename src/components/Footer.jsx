@@ -9,7 +9,7 @@ import dna from "../assets/dna.png";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#dfe9ff] mt-24">
+        <footer className="bg-[#dfe9ff] mt-14">
 
             {/* Top */}
             <div className="max-w-7xl mx-auto px-6 py-14">

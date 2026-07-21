@@ -37,24 +37,29 @@ const AboutAwards = () => {
         <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-3 gap-6">
+
                     {/* Education */}
                     <div className="lg:col-span-2 bg-[#dfe9ff] rounded-[28px] p-10">
                         <div className="flex items-center gap-3 mb-4">
                             <GraduationCap className="text-blue-600" size={32} />
+
                             <h2 className="text-3xl font-bold">
-                                Education & Certifications
+                                শিক্ষা ও পেশাগত যোগ্যতা
                             </h2>
                         </div>
+
                         <p className="text-gray-500 mb-8">
-                            Lifelong learner committed to staying at the
-                            forefront of modern medicine.
+                            আধুনিক চিকিৎসা বিজ্ঞানের সর্বশেষ জ্ঞান ও প্রযুক্তির সাথে নিজেকে
+                            নিয়মিত হালনাগাদ রাখতে বিভিন্ন প্রশিক্ষণ, কর্মশালা এবং
+                            পেশাগত উন্নয়ন কার্যক্রমে অংশগ্রহণ করে থাকি।
                         </p>
+
                         <div className="space-y-5">
                             {education.map((item, index) => (
                                 <div
-                                    key={index}
-                                    className="flex items-start gap-3"
-                                    >
+                                key={index}
+                                className="flex items-start gap-3"
+                                >
                                     <CheckCircle2
                                         size={20}
                                         className="text-blue-600 mt-1"
@@ -74,10 +79,12 @@ const AboutAwards = () => {
                                 className="text-yellow-500"
                                 size={30}
                             />
+
                             <h2 className="text-3xl font-bold">
-                                Awards
+                                সম্মাননা ও অর্জন
                             </h2>
                         </div>
+
                         <div className="space-y-7 mt-8">
                             {awards.map((award, index) => (
                                 <div
@@ -88,12 +95,14 @@ const AboutAwards = () => {
                                         size={18}
                                         className="text-yellow-500 mt-1"
                                     />
+
                                     <div>
                                         <h3 className="font-semibold">
-                                        {award.title} - {award.year}
+                                            {award.title} - {award.year}
                                         </h3>
+
                                         <p className="text-gray-500 text-sm">
-                                            Springfield Health Excellence Board
+                                            বাংলাদেশ মেডিকেল অ্যাসোসিয়েশন
                                         </p>
                                     </div>
                                 </div>
