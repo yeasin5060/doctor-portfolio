@@ -5,7 +5,7 @@ import blog1 from "../assets/checkup-one.jpg";
 import blog2 from "../assets/checkup-two.jpg";
 import blog3 from "../assets/checkup-three.jpg";
 
-const articles = [
+export const articles = [
   {
     image: blog1,
     category: "স্বাস্থ্য পরামর্শ",
