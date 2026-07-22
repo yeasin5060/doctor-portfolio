@@ -125,7 +125,7 @@ const Services = () => {
         {/* Services */}
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Link onClick={() => window.scrollTo(0, 0)}  key={service.id} to={`/services/service/${service.slug}`} className="bg-[#dfe9ff] rounded-[28px] p-5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+            <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}  key={service.id} to={`/services/service/${service.slug}`} className="bg-[#dfe9ff] rounded-[28px] p-5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
             >
               {/* Top */}
               <div className="flex justify-between items-start gap-4">

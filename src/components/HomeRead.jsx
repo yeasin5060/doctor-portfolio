@@ -77,7 +77,7 @@ const HomeRead = () => {
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
                     {articles.map((article, index) => (
                         <Link
-                        onClick={() => window.scrollTo(0, 0)}  key={article.id} to={`/article/${article.slug}`}
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}  key={article.id} to={`/article/${article.slug}`}
                         className="bg-[#dfe9ff] rounded-[28px] p-4 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
                         >
                             {/* Image */}

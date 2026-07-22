@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
 
           {/* Contact Button */}
-          <button className="flex items-center gap-2 px-7 py-3 bg-blue-600 hover:bg-blue-700 transition text-white rounded-full">
+          <button onClick={()=> window.scrollTo({ top: 2650, behavior: "smooth",})} className="flex items-center gap-2 px-7 py-3 bg-blue-600 hover:bg-blue-700 transition text-white rounded-full cursor-pointer">
             <PhoneCallIcon size={18} />
             যোগাযোগ করুন
           </button>

@@ -25,7 +25,7 @@ const HomeServiceDetails = () => {
                 {service.longDescription}
             </p>
             <Link
-                onClick={() => window.scrollTo(0, 0)}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}
                 to="/"
                 className="group inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white/80 backdrop-blur-md border border-gray-200 hover:bg-green-600 hover:text-white transition-all duration-300 shadow-lg mt-10"
                 >

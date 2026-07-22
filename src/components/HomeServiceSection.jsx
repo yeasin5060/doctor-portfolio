@@ -77,7 +77,7 @@ const HomeServiceSection = () => {
                        <Link
                             key={service.id}
                             to={`/service/${service.slug}`}
-                            onClick={() => window.scrollTo(0, 0)}
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth",})}
                             className="bg-[#dfe9ff] rounded-[28px] overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
                             >
                             {/* Top */}
