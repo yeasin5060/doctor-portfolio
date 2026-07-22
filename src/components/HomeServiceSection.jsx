@@ -74,29 +74,33 @@ const HomeServiceSection = () => {
                 {/* Cards */}
                 <div className="grid lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <Link  onClick={() => window.scrollTo(0, 0)}  key={service.id} to={`/service/${service.slug}`} className="bg-[#dfe9ff] rounded-[28px] overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
-                        >
-                        {/* Top */}
-                            <div className="p-7">
+                       <Link
+                            key={service.id}
+                            to={`/service/${service.slug}`}
+                            onClick={() => window.scrollTo(0, 0)}
+                            className="bg-[#dfe9ff] rounded-[28px] overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
+                            >
+                            {/* Top */}
+                            <div className="p-7 flex-1">
                                 <div className="flex justify-between items-start gap-4">
-                                    <div>
-                                        <h3 className="text-3xl font-semibold leading-tight">
-                                        {service.title}
-                                        </h3>
+                                <div>
+                                    <h3 className="text-3xl font-semibold leading-tight">
+                                    {service.title}
+                                    </h3>
 
-                                        <p className="text-gray-600 mt-5 leading-7">
-                                        {service.description}
-                                        </p>
-                                    </div>
+                                    <p className="text-gray-600 mt-5 leading-7">
+                                    {service.description}
+                                    </p>
+                                </div>
 
-                                    <button className="w-14 h-14 rounded-full bg-white flex justify-center items-center shrink-0 hover:bg-blue-600 hover:text-white transition">
-                                        <ArrowUpRight size={26} />
-                                    </button>
+                                <button className="w-14 h-14 rounded-full bg-white flex justify-center items-center shrink-0 hover:bg-blue-600 hover:text-white transition">
+                                    <ArrowUpRight size={26} />
+                                </button>
                                 </div>
                             </div>
 
                             {/* Image */}
-                            <div className="px-3 pb-3">
+                            <div className="px-3 pb-3 mt-auto">
                                 <img
                                 src={service.image}
                                 alt={service.title}

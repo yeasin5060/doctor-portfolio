@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import HomeServiceDetails from "./components/HomeServiceDetails"
 import HomeArticalesDetails from "./components/HomeArticalesDetails"
+import ServiceDetails from "./components/ServiceDetails"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/service" element = {<Service/>}/>
         <Route path="/service/:slug" element={<HomeServiceDetails/>} />
         <Route path="/article/:slug" element={<HomeArticalesDetails/>} />
+        <Route path="/services/service/:slug" element={<ServiceDetails/>} />
       </Routes>
       <Footer/>
     </div>
