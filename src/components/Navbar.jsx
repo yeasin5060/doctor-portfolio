@@ -5,6 +5,7 @@ import { Menu, X , PhoneCallIcon} from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="bg-slate-50 sticky top-0 z-50">
       <div className="mx-6">
