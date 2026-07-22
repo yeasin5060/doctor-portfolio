@@ -74,7 +74,7 @@ const HomeServiceSection = () => {
                 {/* Cards */}
                 <div className="grid lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <Link  onClick={() => window.scrollTo(0, 0)}  key={service.id} to={`/services/${service.slug}`} className="bg-[#dfe9ff] rounded-[28px] overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                        <Link  onClick={() => window.scrollTo(0, 0)}  key={service.id} to={`/service/${service.slug}`} className="bg-[#dfe9ff] rounded-[28px] overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
                         >
                         {/* Top */}
                             <div className="p-7">
